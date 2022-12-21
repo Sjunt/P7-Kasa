@@ -1,6 +1,8 @@
 import React from "react";
+//import { Link } from "react-router-dom";
 import logo from "../../assets/LOGO.png";
 import "./Header.css";
+
 
 export default function Header(){
     return(
@@ -13,6 +15,16 @@ export default function Header(){
                 <li>Accueil</li>
                 <li>A Propos</li>
             </nav>
-        </header>
-    )
+            
+        </header>   
+    )  
 }
+
+
+/*{<NavLink className="navbar-item" activeClassName="is-active" to="/home">
+Accueil
+</NavLink>
+
+<NavLink className="navbar-item" activeClassName="is-active" to="/about">
+A propos
+</NavLink>}*/

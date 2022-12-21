@@ -1,29 +1,22 @@
-//import logo from "./assets/LOGO.png"
 import React from "react";
-//import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import './App.css';
-import Header from './components/Header/Header';
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Error from "./pages/Error/Error";
+
 
 function App() {
   return (
-   /* <div className="App">
-
-    <img src={logo} className="App-logo" alt="logo" />
-    <ul>
-      <li>Accueil</li>
-      <li>A propos</li>
-    </ul>
-    <p>
-      En cours de construction
-    </p>
-    
-    </div>*/
-<div className="App">
-  <Header />
-</div>
-
-
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </div>
   );
 }
+
 
 export default App;

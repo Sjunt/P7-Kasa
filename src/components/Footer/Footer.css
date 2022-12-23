@@ -5,6 +5,24 @@
     background-color: black;
     color: white;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    height: 130px;
+    max-width: 1400px;
+}
+
+.footer p{
+    font-size: 25px;
+    padding-top: 45px;
+}
+
+
+@media screen and (max-width: 700px){
+    .footer{
+        height: 130px;
+    }
+    .footer p{
+        font-size: 17px;
+        padding-top: 28px;
+        margin: -20px;
+    }
 }

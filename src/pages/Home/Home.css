@@ -1,9 +1,15 @@
+
+
+.home{
+    /*text-align: -webkit-center;*/
+    margin: 0;
+    max-width: 1400px;
+}
+
 .cover{
     display: flex;
     justify-content: center;
-    
-    margin: 189px 700px;
-    height: 95%;
+    margin-bottom: 100px;
 }
 
 .cover p{
@@ -16,6 +22,22 @@
 }
 
 .cover img{
-    filter: contrast(0.5);
-    border-radius: 15px;
+    filter: contrast(0.7);
+    border-radius: 20px;
+    height: 223px;
+}
+
+.imgHome{
+    width: 90%;
+}
+
+@media screen and (max-width: 700px) {
+    .cover img{
+      height: 110px;
+    }
+    .cover p {
+        margin-top: 40px;
+        
+        font-size: 26px;
+    }
 }

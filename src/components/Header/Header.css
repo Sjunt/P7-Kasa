@@ -1,44 +1,21 @@
 .header {
-    max-width: 1200px;
-    position: absolute;
-    width: 1240px;
-    height: 68px;
-    left: 100px;
-    top: 40px;
+    max-width: 1400px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
     
   }
 
-  .header-nav{
-    position: absolute;
-    left: 80.08%;
-    right: 0%;
-    top: 25%;
-    bottom: 25%;
-    
-    list-style-type: none;
-    font-family: 'Montserrat';
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 34px;
 
-    display: flex;
-    justify-content: space-between;
-    color :#FF6060;
-}
-
-.header-nav:hover{
-    text-decoration: underline;
-}
-  
-@media screen and (max-width:750px){
-    .header{
-        width: 345px;
-        left: 28px;
-    }
-    
-    .header-nav{       
-        width: 200px;
-        text-transform: uppercase;
-        font-size: larger;
-    }
+  @media screen and (max-width: 700px){
+    img.App-logo{
+    width: 115px;
+    height: 40px;
+  }
+  .header{
+    margin: auto;
+  }
+  li{
+    font-size: 14px;
+  }
 }

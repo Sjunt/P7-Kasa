@@ -8,7 +8,7 @@ import "./Home.css"
 
 export default function Home() {
   return (
-    <div>
+    <div className="home">
       <Header />
         <div className="cover">
           <p>Chez vous, partout et ailleurs</p>

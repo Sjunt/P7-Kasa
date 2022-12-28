@@ -1,0 +1,32 @@
+.card_container{
+   display: grid;
+   grid-template-columns: 360px 360px 360px;
+   max-width: 1400px;
+   background-color: #F6F6F6;
+   padding-left: 75px;
+   margin-left: 75px;
+   margin-right: 75px;
+   border-radius: 25px;
+   
+}
+
+.card{
+   margin: 25px;
+   position: relative;
+}
+
+.card img{
+   width: 305px;
+   height: 305px;
+   margin-bottom: 20px;
+   border-radius: 10px;
+   object-fit: cover;
+   filter: contrast(0.7);
+}
+
+.card p{
+   position: absolute;
+   top: 235px;
+   left: 15px;
+   color: white;
+}

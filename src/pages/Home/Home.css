@@ -1,5 +1,4 @@
 
-
 .home{
     /*text-align: -webkit-center;*/
     margin: 0;
@@ -9,7 +8,7 @@
 .cover{
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .cover p{
@@ -17,7 +16,7 @@
     color: white;
     z-index: 1;
     margin-top: 85px;
-    font-size: 35px;
+    font-size: 38px;
     font-weight: 700;
 }
 
@@ -37,7 +36,6 @@
     }
     .cover p {
         margin-top: 40px;
-        
         font-size: 26px;
     }
 }

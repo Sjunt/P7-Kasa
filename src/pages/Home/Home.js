@@ -3,8 +3,7 @@ import Header from "../../components/Header/Header";
 import cover from "../../assets/cover.png"
 import Footer from "../../components/Footer/Footer";
 import "./Home.css"
-
-
+import HousingData from "../../components/HousingData/HousingData";
 
 export default function Home() {
   return (
@@ -14,6 +13,7 @@ export default function Home() {
           <p>Chez vous, partout et ailleurs</p>
           <img className="imgHome" src={cover} alt="paysage" />
         </div>
+      <HousingData />
       <Footer />
     </div>
   );

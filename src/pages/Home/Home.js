@@ -9,8 +9,9 @@ export default function Home() {
   return (
     <div className="home">
       <Header />
-        <div className="cover">
+        <div className="banner">
           <p>Chez vous, partout et ailleurs</p>
+          <div className="banner_overlay"></div>
           <img className="imgHome" src={cover} alt="paysage" />
         </div>
       <HousingData />

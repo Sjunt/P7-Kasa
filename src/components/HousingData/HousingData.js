@@ -11,6 +11,7 @@ export default function HousingData () {
               <Link key={item.id} to={`/housing/${item.id}`}>
                 <div className="card">
                   <img src={item.cover} alt={item.title} />
+                  <div className="card_overlay"></div>
                   <p>{item.title}</p>
                 </div>
               </Link>

@@ -1,0 +1,42 @@
+.dropDown_block{
+    display: flex;
+    justify-content: space-between;
+    background-color : #FF6060;
+    color: white;
+    align-items: center;
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    border-radius: 5px;
+}
+
+.dropDown_block h2{
+    font-size: large;
+}
+
+button{
+    border: none;
+    background: transparent;
+}
+
+.texte{
+    color : #FF6060;
+    font-size: large;
+    width: 1000px;
+    margin: 15px auto;
+    
+}
+
+@media screen and (max-width: 1150px) {
+    .dropDown_block{
+       width: auto;
+       margin-left: 20px;
+       margin-right: 20px;
+    }
+    .texte{
+        width: auto;
+        margin-left: 40px;
+        margin-right: 35px;
+    }
+}

@@ -1,9 +1,9 @@
 .card_container{
    display: grid;
-   grid-template-columns: 360px 360px 360px;
+   grid-template-columns: 370px 370px 370px;
    max-width: 1400px;
    background-color: #F6F6F6;
-   padding-left: 85px;
+   padding-left: 75px;
    margin-left: 75px;
    margin-right: 75px;
    border-radius: 25px;
@@ -18,7 +18,7 @@
 .card_overlay{
    background: linear-gradient(transparent,rgba(0,0,0,.5));
    height: 305px;
-   width: 98%;
+   width: 95%;
    position: absolute;
    z-index: 2;
    top: 0;
@@ -47,6 +47,21 @@
    .card_container{
       margin: 0;
       padding: 0;
+      display: flex;
+      flex-direction: column;
+   }
+   .card_overlay{
+      width: 100%;
+   }
+   .card img{
+      width: 100%;
+   }
+   .card{
+      margin: -10px 15px 0px 15px;
+   }
+   .card p {
+      right: 10px;
+      font-size: larger;
    }
 }
 

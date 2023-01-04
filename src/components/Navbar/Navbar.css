@@ -12,7 +12,7 @@ a.header-nav{
     padding-left: 50px;
 }
 
-a{
+.navbar a{
     color: #FF6060; 
     font-size: larger;
     text-decoration: none;

@@ -1,0 +1,37 @@
+.imgAbout{
+    width: 90%;
+    margin-left: 75px;
+    border-radius: 25px;
+    filter: contrast(0.7);
+    margin-bottom: 15px;
+    margin-top: -25px;
+}
+
+body{
+    max-width: 1400px;
+}
+
+.footer{
+    margin-top: 70px;
+}
+
+@media screen and (max-width: 1250px) {
+    .bannerAbout{
+        width: auto;
+        margin-right: -60px;
+    }
+    .imgAbout{
+        margin: 0 auto;
+        margin-left: 20px;
+        margin-bottom: 25px;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .bannerAbout{
+        width: auto;
+        margin-right: -20px;
+    }
+}

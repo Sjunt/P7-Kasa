@@ -9,6 +9,7 @@
     margin-bottom: 20px;
     padding: 0 20px;
     border-radius: 5px;
+    height: 47px;
 }
 
 .dropDown_block h2{
@@ -24,8 +25,13 @@ button{
     color : #FF6060;
     font-size: large;
     width: 1000px;
-    margin: 15px auto;
-    
+    margin: -19px auto;
+    background-color: #F6F6F6;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1150px) {
@@ -36,7 +42,11 @@ button{
     }
     .texte{
         width: auto;
-        margin-left: 40px;
-        margin-right: 35px;
+        margin-left: 25px;
+        margin-right: 25px;
+        padding-bottom: 70px;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }

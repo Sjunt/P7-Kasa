@@ -28,6 +28,7 @@ h1{
 
 .error a{
   text-decoration: underline;
+  color: #FF6060;
 }
 
 
@@ -44,5 +45,8 @@ h1{
     }  
     p{
       font-size: 33px;
+    }
+    .error p{
+      font-size: 30px;
     }
 }

@@ -16,7 +16,7 @@ export default function Collapse(props) {
   
 
     return(
-<div>
+    <div>
       <div className="dropDown_block" onClick={inputDropDown}>
         <h2 id="title">{props.title}</h2>
         <button>
@@ -37,5 +37,5 @@ export default function Collapse(props) {
         {props.texte}
       </div>
     </div>
-    );
+  );
 }

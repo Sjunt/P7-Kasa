@@ -2,8 +2,8 @@
     width: 90%;
     margin-left: 75px;
     border-radius: 25px;
-    filter: contrast(0.7);
-    margin-bottom: 15px;
+    filter: contrast(0.6);
+    margin-bottom: 25px;
     margin-top: -25px;
 }
 
@@ -21,7 +21,6 @@ body{
         margin-right: -60px;
     }
     .imgAbout{
-        margin: 0 auto;
         margin-left: 20px;
         margin-bottom: 25px;
         height: 200px;
@@ -32,6 +31,12 @@ body{
 @media screen and (max-width: 700px) {
     .bannerAbout{
         width: auto;
-        margin-right: -20px;
+        margin-right: 0px;
+    }
+    .imgAbout{
+        margin: 0 auto;
+        margin-left: 25px;
+        border-radius: 15px;
+        margin-bottom: 20px;
     }
 }

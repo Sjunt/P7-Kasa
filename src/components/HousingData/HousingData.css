@@ -3,11 +3,11 @@
    grid-template-columns: 370px 370px 370px;
    max-width: 1400px;
    background-color: #F6F6F6;
-   padding-left: 75px;
    margin-left: 75px;
    margin-right: 75px;
    border-radius: 25px;
    padding-top: 10px;
+   place-content: center;
 }
 
 .card{
@@ -43,7 +43,7 @@
    z-index: 3;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1275px) {
    .card_container{
       margin: 0;
       padding: 0;

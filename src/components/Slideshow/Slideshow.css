@@ -1,0 +1,57 @@
+.slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 415px;
+    margin-top: -40px;
+}
+
+.housingPictures img{
+    border-radius: 20px;
+    height: 415px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.leftButton{
+    position: absolute;
+    z-index: 1;
+    left: 7%;
+    top: 40%;
+}
+
+.rightButton{
+    position: absolute;
+    z-index: 1;
+    right: 7%;
+    top: 40%;
+}
+
+button{
+    cursor: pointer;
+}
+
+.housingPictures{
+    position: absolute;
+    width: 90%;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .housingPictures img{
+        height: 265px;
+    }
+    .leftButton img {
+        height: 30px;
+    }
+    .rightButton img {
+        height: 30px;
+    }
+    .leftButton{
+        top: 37%;
+    }
+    .rightButton{
+        top: 37%;
+    }
+}

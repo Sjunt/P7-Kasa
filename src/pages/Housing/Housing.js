@@ -7,7 +7,7 @@ import cardItems from "../../assets/housingData";
 import Error from "../../pages/Error/Error";
 import Collapse from "../../components/Collapse/Collapse";
 import Slideshow from "../../components/Slideshow/Slideshow";
-//import Rating from "../../components/Rating";
+import Rating from "../../components/Rating/Rating";
 
 
 export default function Housing() {
@@ -26,7 +26,8 @@ export default function Housing() {
     if (!item){
         return <Error />
     } else {
-   
+
+    
         return (
 
             <div className="housing">
@@ -39,19 +40,26 @@ export default function Housing() {
                     <div className="firstBlock">
                         <h2>{item.title}</h2>
                         <p>{item.location}</p>
-                        <ul>
-                            <li>{item.tags}</li>
-                        </ul>
                     </div>
 
                     <div className="secondBlock">
                         <p>{item.host.name}</p>
                         <img src={item.host.picture} alt="host" />
-
-                        <p>{item.rating} étoiles (img a mettre)</p>
-                    </div>
+                    </div> 
                 </div>
 
+                <div className="thirdBlock">
+                    <div className="housing_tags">
+                        <ul>
+                            <li>{item.tags}</li>
+                        </ul>  
+                    </div> 
+
+                    <div className="housing_rating">
+                        <Rating />
+                    </div>
+                </div>
+                
 
                 <div className="housing_description">
                     <Collapse title="Description" texte={item.description} />
@@ -61,6 +69,6 @@ export default function Housing() {
                 <Footer />
 
             </div>
-        );
+        );       
     }
 }

@@ -1,6 +1,10 @@
 import React from "react";
+//import EmptyStar from "../../assets/EmptyStar";
+//import FullStar from "../../assets/FullStar";
 
-export default function Rating(props) {
+export default function Rating() {
     
-    return <></>
+    return (
+        <p>5 étoiles</p>
+    )
 }

@@ -12,6 +12,8 @@ import Rating from "../../components/Rating/Rating";
 
 export default function Housing() {
 
+    
+
     const { id } = useParams();
     const [item, setItem]= useState();
 
@@ -23,14 +25,16 @@ export default function Housing() {
     }, [id]);     
     
 
-    if (!item){
-        return <Error />
+    if (item  === undefined){
+        
+            return <Error />
+        
     } else {
 
     
         return (
 
-            <div className="housing">
+            <div id="housing">
 
                 <Header />
 
@@ -40,30 +44,42 @@ export default function Housing() {
                     <div className="firstBlock">
                         <h2>{item.title}</h2>
                         <p>{item.location}</p>
+                        <div className="housing_tags">
+                            <ul>
+                                {item.tags.map((t) => (
+                                <li key={t}>
+                                    {t}
+                                </li>
+                                ))}
+                            </ul>  
+                        </div> 
                     </div>
 
                     <div className="secondBlock">
-                        <p>{item.host.name}</p>
-                        <img src={item.host.picture} alt="host" />
+                        <div className="housing_host">
+                            <p>{item.host.name}</p>
+                            <img src={item.host.picture} alt="host" />
+                        </div>
+                        <div className="housing_rating">
+                            <Rating  rating={item.rating}/>
+                        </div>
                     </div> 
                 </div>
-
-                <div className="thirdBlock">
-                    <div className="housing_tags">
-                        <ul>
-                            <li>{item.tags}</li>
-                        </ul>  
-                    </div> 
-
-                    <div className="housing_rating">
-                        <Rating />
-                    </div>
-                </div>
-                
 
                 <div className="housing_description">
                     <Collapse title="Description" texte={item.description} />
-                    <Collapse title="Equipments" texte={item.equipments} />
+
+                    <div id="housing_equipements">
+                        
+                        <Collapse title="Equipements" texte=
+                        {item.equipments.map((e) => (
+                        <li key={e}>
+                            {e}
+                        </li>
+                        ))}
+                        />
+
+                    </div>
                 </div>
 
                 <Footer />

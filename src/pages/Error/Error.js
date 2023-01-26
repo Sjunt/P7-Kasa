@@ -3,6 +3,7 @@ import Header from '../../components/Header/Header'
 import "./Error.css";
 
 export default function Error() {
+ 
   return (
     
     <div className="bodyError">

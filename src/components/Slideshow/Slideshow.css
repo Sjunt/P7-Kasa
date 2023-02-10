@@ -38,6 +38,16 @@ button{
     text-align: center;
 }
 
+.pagination{
+    position: relative;
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    z-index: 2;
+    top: 88%;
+    left: 50%;
+}
+
 @media screen and (max-width: 700px) {
     .housingPictures img{
         height: 265px;
@@ -53,5 +63,8 @@ button{
     }
     .rightButton{
         top: 37%;
+    }
+    .pagination{
+        top: 63%;
     }
 }

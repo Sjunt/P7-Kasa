@@ -30,8 +30,12 @@ export default function Slideshow(props) {
             </button>
 
             <button className="rightButton">
-            <img src={VectorRight} alt="Flèche suivante" onClick={nextPicture} />
+                <img src={VectorRight} alt="Flèche suivante" onClick={nextPicture} />
             </button>
+
+            <div className="pagination">
+                {currentPicture + 1}/{pictures.length}
+            </div>
             
             {pictures.map((pictures, show) =>{
                 return(
